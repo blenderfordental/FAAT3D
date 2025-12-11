@@ -10,23 +10,54 @@
       background-color: #fff;
       color: #333;
       font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 16px 60px;
       text-align: center;
-      padding: 50px 20px;
     }
+
+    /* 1. Logo */
     img.logo {
-      max-width: 300px;
+      max-width: 260px;
       height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
+
+    /* 2 + 6. Big FHD images */
+    .hero-image,
+    .footer-image {
+      width: 100%;
+      height: auto;
+      max-height: 65vh;      /* scaled to browser window */
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 32px;
+    }
+
     h1 {
-      font-size: 2em;
-      margin-bottom: 20px;
+      font-size: 1.8em;
+      margin-bottom: 16px;
     }
+
     .description {
       font-size: 1em;
-      margin-bottom: 40px;
-      padding: 0 20px;
+      margin-bottom: 28px;
     }
+
+    /* 3. Links */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
     .link-button {
       display: flex;
       align-items: center;
@@ -34,100 +65,118 @@
       background-color: #e6f0ff;
       color: #333;
       text-decoration: none;
-      padding: 15px 25px;
-      margin: 10px auto;
-      width: 260px;
+      padding: 12px 22px;
       border-radius: 8px;
-      font-size: 1.2em;
-      transition: background-color 0.3s;
+      font-size: 1.05em;
+      width: 260px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
     }
+
     .link-button:hover {
       background-color: #cce0ff;
     }
+
     .link-button img.icon {
       width: 24px;
       height: 24px;
       margin-right: 10px;
     }
-    .gallery {
-      margin-top: 50px;
+
+    /* 4. Promo PNGs */
+    .promos {
+      margin-bottom: 32px;
     }
-    .gallery img {
-      max-width: 90%;
+
+    .promos img {
+      width: 100%;
       height: auto;
-      margin: 20px 0;
+      max-height: 55vh;      /* slightly smaller to avoid long scrolling */
+      object-fit: contain;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
     }
+
+    /* 5. Video */
     .popular-video {
-      margin-top: 50px;
+      margin-bottom: 32px;
     }
+
     .popular-video img {
       max-width: 560px;
       width: 100%;
       height: auto;
+      max-height: 50vh;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    .fhd-image {
-      max-width: 90%;
-      height: auto;
-      margin: 30px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.8em;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo -->
-  <img src="faat3d-logo.png" alt="FAAT3D Logo" class="logo">
+  <div class="wrapper">
 
-  <!-- NEW FHD IMAGE AFTER LOGO -->
-  <img src="fhd-image-after-logo.jpg" alt="FAAT3D Full HD Image" class="fhd-image">
+    <!-- 1. Logo -->
+    <img src="faat3d-logo.png" alt="FAAT3D Logo" class="logo">
 
-  <h1>FAAT3D Official Links</h1>
+    <!-- 2. First FHD picture after logo -->
+    <!-- use your top FHD PNG here -->
+    <img src="faat3d-fhd-top.png" alt="FAAT3D Top Banner" class="hero-image">
 
-  <p class="description">
-    FAAT3D (Full Arch Accuracy Test 3D) is a metrology-grade research project evaluating and ranking the accuracy of dental laboratory and clinical intraoral 3D scanners.
-  </p>
+    <h1>FAAT3D Official Links</h1>
+    <p class="description">
+      FAAT3D (Full Arch Accuracy Test 3D) is a metrology-grade research project evaluating and ranking the accuracy of dental laboratory and clinical intraoral 3D scanners.
+    </p>
 
-  <!-- Links -->
-  <a class="link-button" href="https://www.patreon.com/cadaon" target="_blank">
-    <img src="icon-patreon.png" alt="Patreon" class="icon"> Patreon
-  </a>
-  <a class="link-button" href="https://contribee.com/cadaon" target="_blank">
-    <img src="icon-contribee.png" alt="Contribee" class="icon"> Contribee
-  </a>
-  <a class="link-button" href="https://youtube.com/@faat3d" target="_blank">
-    <img src="icon-youtube.png" alt="YouTube" class="icon"> YouTube
-  </a>
-  <a class="link-button" href="https://instagram.com/faat3d_news" target="_blank">
-    <img src="icon-instagram.png" alt="Instagram" class="icon"> Instagram
-  </a>
-  <a class="link-button" href="https://www.facebook.com/people/Faat3d/61568288117871/" target="_blank">
-    <img src="icon-facebook.png" alt="Facebook" class="icon"> Facebook
-  </a>
+    <!-- 3. Links -->
+    <div class="links">
+      <a class="link-button" href="https://www.patreon.com/cadaon" target="_blank">
+        <img src="icon-patreon.png" alt="Patreon" class="icon"> Patreon
+      </a>
+      <a class="link-button" href="https://contribee.com/cadaon" target="_blank">
+        <img src="icon-contribee.png" alt="Contribee" class="icon"> Contribee
+      </a>
+      <a class="link-button" href="https://youtube.com/@faat3d" target="_blank">
+        <img src="icon-youtube.png" alt="YouTube" class="icon"> YouTube
+      </a>
+      <a class="link-button" href="https://instagram.com/faat3d_news" target="_blank">
+        <img src="icon-instagram.png" alt="Instagram" class="icon"> Instagram
+      </a>
+      <a class="link-button" href="https://www.facebook.com/people/Faat3d/61568288117871/" target="_blank">
+        <img src="icon-facebook.png" alt="Facebook" class="icon"> Facebook
+      </a>
+    </div>
 
-  <!-- Gallery Section -->
-  <div class="gallery">
-    <img src="faat3d-promo1.png" alt="FAAT3D Project Overview">
-    <img src="faat3d-promo2.png" alt="FAAT3D QR Code for YouTube">
+    <!-- 4. Promo PNG pictures AFTER links -->
+    <div class="promos">
+      <img src="faat3d-promo1.png" alt="FAAT3D Promo 1">
+      <img src="faat3d-promo2.png" alt="FAAT3D Promo 2">
+    </div>
+
+    <!-- 5. Video link -->
+    <div class="popular-video">
+      <h2>Popular Video</h2>
+      <a href="https://youtu.be/5lkJnpLcobo?si=n4JqlpCfRkRSD_u0" target="_blank">
+        <img src="https://img.youtube.com/vi/5lkJnpLcobo/hqdefault.jpg" alt="Popular Video Thumbnail">
+      </a>
+    </div>
+
+    <!-- 6. Second FHD picture after video -->
+    <!-- use your second FHD PNG here -->
+    <img src="faat3d-fhd-bottom.png" alt="FAAT3D Bottom Banner" class="footer-image">
+
+    <footer>
+      © 2025 FAAT3D. Full Arch Accuracy Testing. All rights reserved.
+    </footer>
+
   </div>
-
-  <!-- Popular Video -->
-  <div class="popular-video">
-    <h2>Popular Video</h2>
-    <a href="https://youtu.be/5lkJnpLcobo?si=n4JqlpCfRkRSD_u0" target="_blank">
-      <img src="https://img.youtube.com/vi/5lkJnpLcobo/hqdefault.jpg" alt="Popular Video Thumbnail">
-    </a>
-  </div>
-
-  <!-- NEW FHD IMAGE AFTER VIDEO -->
-  <img src="fhd-image-after-video.jpg" alt="FAAT3D Additional Full HD Image" class="fhd-image">
-
-  <p style="margin-top: 50px; font-size: 0.8em;">© 2025 FAAT3D. Full Arch Accuracy Testing. All rights reserved.</p>
 
 </body>
 </html>
