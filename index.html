@@ -22,21 +22,23 @@
 
     /* 1. Logo */
     img.logo {
+      display: block;
       max-width: 260px;
       height: auto;
-      margin-bottom: 24px;
+      margin: 0 auto 24px;   /* hard-centered */
     }
 
-    /* 2 + 6. Big FHD images */
+    /* 2 + 7. Big FHD images */
     .hero-image,
     .footer-image {
+      display: block;
       width: 100%;
       height: auto;
       max-height: 65vh;      /* scaled to browser window */
       object-fit: contain;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 32px;
+      margin: 0 auto 32px;
     }
 
     h1 {
@@ -49,7 +51,7 @@
       margin-bottom: 28px;
     }
 
-    /* 3. Links */
+    /* 4. Links */
     .links {
       display: flex;
       flex-direction: column;
@@ -83,33 +85,36 @@
       margin-right: 10px;
     }
 
-    /* 4. Promo PNGs */
+    /* 5. Promo PNGs */
     .promos {
       margin-bottom: 32px;
     }
 
     .promos img {
+      display: block;
       width: 100%;
       height: auto;
-      max-height: 55vh;      /* slightly smaller to avoid long scrolling */
+      max-height: 55vh;
       object-fit: contain;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+      margin: 0 auto 20px;
     }
 
-    /* 5. Video */
+    /* 6. Video */
     .popular-video {
       margin-bottom: 32px;
     }
 
     .popular-video img {
+      display: block;
       max-width: 560px;
       width: 100%;
       height: auto;
       max-height: 50vh;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 0 auto;
     }
 
     footer {
@@ -127,56 +132,6 @@
     <img src="faat3d-logo.png" alt="FAAT3D Logo" class="logo">
 
     <!-- 2. First FHD picture after logo -->
-    <!-- use your top FHD PNG here -->
-    <img src="faat3d-fhd-top.png" alt="FAAT3D Top Banner" class="hero-image">
+    <img src="fhd-image-after-logo.jpg" alt="FAAT3D Top Banner" class="hero-image">
 
-    <h1>FAAT3D Official Links</h1>
-    <p class="description">
-      FAAT3D (Full Arch Accuracy Test 3D) is a metrology-grade research project evaluating and ranking the accuracy of dental laboratory and clinical intraoral 3D scanners.
-    </p>
-
-    <!-- 3. Links -->
-    <div class="links">
-      <a class="link-button" href="https://www.patreon.com/cadaon" target="_blank">
-        <img src="icon-patreon.png" alt="Patreon" class="icon"> Patreon
-      </a>
-      <a class="link-button" href="https://contribee.com/cadaon" target="_blank">
-        <img src="icon-contribee.png" alt="Contribee" class="icon"> Contribee
-      </a>
-      <a class="link-button" href="https://youtube.com/@faat3d" target="_blank">
-        <img src="icon-youtube.png" alt="YouTube" class="icon"> YouTube
-      </a>
-      <a class="link-button" href="https://instagram.com/faat3d_news" target="_blank">
-        <img src="icon-instagram.png" alt="Instagram" class="icon"> Instagram
-      </a>
-      <a class="link-button" href="https://www.facebook.com/people/Faat3d/61568288117871/" target="_blank">
-        <img src="icon-facebook.png" alt="Facebook" class="icon"> Facebook
-      </a>
-    </div>
-
-    <!-- 4. Promo PNG pictures AFTER links -->
-    <div class="promos">
-      <img src="faat3d-promo1.png" alt="FAAT3D Promo 1">
-      <img src="faat3d-promo2.png" alt="FAAT3D Promo 2">
-    </div>
-
-    <!-- 5. Video link -->
-    <div class="popular-video">
-      <h2>Popular Video</h2>
-      <a href="https://youtu.be/5lkJnpLcobo?si=n4JqlpCfRkRSD_u0" target="_blank">
-        <img src="https://img.youtube.com/vi/5lkJnpLcobo/hqdefault.jpg" alt="Popular Video Thumbnail">
-      </a>
-    </div>
-
-    <!-- 6. Second FHD picture after video -->
-    <!-- use your second FHD PNG here -->
-    <img src="faat3d-fhd-bottom.png" alt="FAAT3D Bottom Banner" class="footer-image">
-
-    <footer>
-      © 2025 FAAT3D. Full Arch Accuracy Testing. All rights reserved.
-    </footer>
-
-  </div>
-
-</body>
-</html>
+    <!-- Title + description
