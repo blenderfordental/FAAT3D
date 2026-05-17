@@ -5,6 +5,7 @@
   <title>FAAT3D - Full Arch Accuracy Test 3D</title>
   <meta name="description" content="FAAT3D (Full Arch Accuracy Test 3D) is a metrology-grade research project evaluating and ranking the accuracy of dental laboratory and clinical intraoral 3D scanners.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       background-color: #fff;
@@ -20,21 +21,19 @@
       text-align: center;
     }
 
-    /* 1. Logo */
     img.logo {
       display: block;
       max-width: 260px;
       height: auto;
-      margin: 0 auto 24px;   /* hard-centered */
+      margin: 0 auto 24px;
     }
 
-    /* 2 + 7. Big FHD images */
     .hero-image,
     .footer-image {
       display: block;
       width: 100%;
       height: auto;
-      max-height: 65vh;      /* scaled to browser window */
+      max-height: 65vh;
       object-fit: contain;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -51,7 +50,6 @@
       margin-bottom: 28px;
     }
 
-    /* 4. Links */
     .links {
       display: flex;
       flex-direction: column;
@@ -85,7 +83,6 @@
       margin-right: 10px;
     }
 
-    /* 5. Promo PNGs */
     .promos {
       margin-bottom: 32px;
     }
@@ -101,7 +98,6 @@
       margin: 0 auto 20px;
     }
 
-    /* 6. Video */
     .popular-video {
       margin-bottom: 32px;
     }
@@ -117,6 +113,72 @@
       margin: 0 auto;
     }
 
+    .events {
+      margin: 50px auto 36px;
+      padding: 28px 18px;
+      border-radius: 16px;
+      background: #f7f9ff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .events h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .event-card {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .event-card h3 {
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .event-language {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .event-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 60vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+      margin: 0 auto 24px;
+    }
+
+    .event-description {
+      line-height: 1.55;
+      font-size: 1em;
+    }
+
+    .event-video-button {
+      display: block;
+      width: fit-content;
+      margin: 28px auto 0;
+      padding: 14px 24px;
+      background-color: #e6f0ff;
+      color: #333;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .event-video-button:hover {
+      background-color: #cce0ff;
+    }
+
     footer {
       margin-top: 30px;
       font-size: 0.8em;
@@ -124,48 +186,47 @@
     }
   </style>
 </head>
-<body>
 
+<body>
   <div class="wrapper">
 
-    <!-- 1. Logo -->
     <img src="faat3d-logo.png" alt="FAAT3D Logo" class="logo">
 
-    <!-- 2. First FHD picture after logo -->
     <img src="fhd-image-after-logo.jpg" alt="FAAT3D Top Banner" class="hero-image">
 
-    <!-- Title + description -->
     <h1>FAAT3D Official Links</h1>
+
     <p class="description">
       FAAT3D (Full Arch Accuracy Test 3D) is a metrology-grade research project evaluating and ranking the accuracy of dental laboratory and clinical intraoral 3D scanners.
     </p>
 
-    <!-- 4. Links -->
     <div class="links">
       <a class="link-button" href="https://www.patreon.com/cadaon" target="_blank">
         <img src="icon-patreon.png" alt="Patreon" class="icon"> Patreon
       </a>
+
       <a class="link-button" href="https://contribee.com/cadaon" target="_blank">
         <img src="icon-contribee.png" alt="Contribee" class="icon"> Contribee
       </a>
+
       <a class="link-button" href="https://youtube.com/@faat3d" target="_blank">
         <img src="icon-youtube.png" alt="YouTube" class="icon"> YouTube
       </a>
+
       <a class="link-button" href="https://instagram.com/faat3d_news" target="_blank">
         <img src="icon-instagram.png" alt="Instagram" class="icon"> Instagram
       </a>
+
       <a class="link-button" href="https://www.facebook.com/people/Faat3d/61568288117871/" target="_blank">
         <img src="icon-facebook.png" alt="Facebook" class="icon"> Facebook
       </a>
     </div>
 
-    <!-- 5. Promo PNG pictures AFTER links -->
     <div class="promos">
       <img src="faat3d-promo1.png" alt="FAAT3D Promo 1">
       <img src="faat3d-promo2.png" alt="FAAT3D Promo 2">
     </div>
 
-    <!-- 6. Video link -->
     <div class="popular-video">
       <h2>Popular Video</h2>
       <a href="https://youtu.be/5lkJnpLcobo?si=n4JqlpCfRkRSD_u0" target="_blank">
@@ -173,7 +234,49 @@
       </a>
     </div>
 
-    <!-- 7. Second FHD picture after video -->
+    <section class="events">
+      <h2>Events</h2>
+
+      <div class="event-card">
+        <h3>Coming soon: Movie premiere 2026</h3>
+
+        <p class="event-language">
+          In Lithuanian language / Lietuvių kalba 🇱🇹
+        </p>
+
+        <img src="FAAT3D_Proverzis_LT_promo1.jpg" alt="FAAT3D: PROVERŽIS Lithuanian movie premiere 2026">
+
+        <div class="event-description">
+          <p><strong>„FAAT3D: PROVERŽIS“ – oficialus anonsas (2026) 🇱🇹</strong><br>
+          <strong>„FAAT3D: THE LEAP“ – Official Trailer 2026.</strong></p>
+
+          <p>FAAT3D – „Full Arch Accuracy Test 3D“ – tai nepriklausomas skaitmeninės odontologijos projektas, skirtas pilno lanko (full-arch) 3D skenavimo, fotogrametrijos ir CAD/CAM darbo sekų tikslumo analizei bei palyginimui. Projektas orientuotas į realių klinikinių ir laboratorinių sistemų testavimą, metrologiją ir technologijų vertinimą be rinkodarinio pagražinimo.</p>
+
+          <p><strong>CDT Mantas Auškelis, Lithuania – „režisierius“.</strong></p>
+
+          <p>„FAAT3D: PROVERŽIS“ – tai kinematografinė dokumentinė interaktyvi paskaita apie skaitmeninės odontologijos virsmą.</p>
+
+          <p>Filmas nagrinėja intraoralinių ir laboratorinių skenerių tobulėjimą bei jų reikšmės augimą šiuolaikinėje odontologijoje. Čia susiduria technologinis progresas, abejonės, rinkodara ir realus klinikinis pritaikymas.</p>
+
+          <p>Per dokumentinę ir lyrinę vizualinę kalbą žiūrovas kviečiamas į kelionę per dilemų kupiną dešimtmetį – nuo hibridinių darbo sekų iki pilnai skaitmeninio modelio ir fotogrametrijos, vertinant visa tai per metrologijos mokslo prizmę, su retrospektyva į jau įgyvendintus darbus bei atsargiomis futurologinėmis įžvalgomis.</p>
+
+          <p>Kaip dažnai nutinka moksle, atsakymai neretai pasirodo kitokie, nei tikėjomės, o kartais jais tikėti tampa nepatogu, nes jie nėra tai, ko norėjome. Tikėjimas ir žinojimas, deja, ne visada sutampa.</p>
+
+          <p>Tai istorija apie momentą, kai technologijų viršūnė lyg jau matoma rūke, tačiau išsklaidžius mitus ir pasakas paaiškėja, kad ji vis dar nepasiekiama ranka.</p>
+
+          <p>FAAT3D kelia klausimą, ar šiandien matome tikrą proveržį, ar tik dar vieną iliuziją prieš naują šuolį.</p>
+
+          <p>Tai audiovizualinė kelionė žmonėms, kurie nenori būti aklai nuvesti prie paruoštų atsakymų, bet siekia patys praskleisti nežinios rūką, suprasti galimybes, jų kainą, riziką ir kryptį.</p>
+
+          <p><strong>Galimybė registruotis filmo peržiūrai planuojama nuo gegužės 25 d.</strong></p>
+        </div>
+
+        <a class="event-video-button" href="https://youtu.be/5hVp4iV2xX4" target="_blank">
+          ▶ Play trailer on YouTube
+        </a>
+      </div>
+    </section>
+
     <img src="fhd-image-after-video.jpg" alt="FAAT3D Bottom Banner" class="footer-image">
 
     <footer>
@@ -181,7 +284,6 @@
     </footer>
 
   </div>
-
 </body>
 </html>
-
+```
