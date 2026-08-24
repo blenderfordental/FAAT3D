@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>FAAT3D - Full Arch Accuracy Test 3D</title>
+
   <meta name="description" content="FAAT3D (Full Arch Accuracy Test 3D) is a metrology-grade research project evaluating and ranking the accuracy of dental laboratory and clinical intraoral 3D scanners.">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+
     body {
       background-color: #fff;
       color: #333;
@@ -50,6 +53,10 @@
       margin-bottom: 28px;
     }
 
+    /* -------------------------------- */
+    /* STANDARD SOCIAL / NAVIGATION LINKS */
+    /* -------------------------------- */
+
     .links {
       display: flex;
       flex-direction: column;
@@ -83,6 +90,10 @@
       margin-right: 10px;
     }
 
+    /* -------------------------------- */
+    /* PROMO IMAGES */
+    /* -------------------------------- */
+
     .promos {
       margin-bottom: 32px;
     }
@@ -98,6 +109,10 @@
       margin: 0 auto 20px;
     }
 
+    /* -------------------------------- */
+    /* POPULAR VIDEO */
+    /* -------------------------------- */
+
     .popular-video {
       margin-bottom: 32px;
     }
@@ -112,6 +127,10 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       margin: 0 auto;
     }
+
+    /* -------------------------------- */
+    /* EVENTS */
+    /* -------------------------------- */
 
     .events {
       margin: 50px auto 36px;
@@ -161,60 +180,124 @@
       font-size: 1em;
     }
 
-.event-video-embed {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-  margin: 30px auto 0;
-  aspect-ratio: 16 / 9;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
+    /* -------------------------------- */
+    /* EVENT VIDEO */
+    /* -------------------------------- */
 
-.event-video-embed iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+    .event-video-embed {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 30px auto 0;
+      aspect-ratio: 16 / 9;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
 
+    .event-video-embed iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
 
+    /* ================================= */
+    /* TICKET BUTTONS — SPECIAL CTA */
+    /* ================================= */
 
     .top-ticket-button,
     .event-ticket-button {
       display: inline-block;
-      background: linear-gradient(135deg, #005bbb, #00a3ff);
-      color: #fff;
+
+      background: linear-gradient(
+        135deg,
+        #ffbd21 0%,
+        #ff7a00 48%,
+        #f04416 100%
+      );
+
+      color: #ffffff;
       text-decoration: none;
-      padding: 16px 26px;
-      border-radius: 10px;
-      font-size: 1.1em;
-      font-weight: bold;
-      box-shadow: 0 6px 14px rgba(0,91,187,0.35);
-      transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+
+      padding: 17px 28px;
+
+      border-radius: 12px;
+
+      border: 2px solid #d43b09;
+
+      font-size: 1.12em;
+      font-weight: 800;
+
+      letter-spacing: 0.2px;
+
+      box-shadow:
+        0 7px 0 #a92a08,
+        0 13px 22px rgba(169,42,8,0.30);
+
+      transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        filter 0.18s ease;
     }
 
     .top-ticket-button:hover,
     .event-ticket-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 18px rgba(0,91,187,0.45);
+      transform: translateY(-3px);
+
+      filter: brightness(1.08);
+
+      box-shadow:
+        0 10px 0 #a92a08,
+        0 17px 28px rgba(169,42,8,0.38);
     }
 
+    .top-ticket-button:active,
+    .event-ticket-button:active {
+      transform: translateY(4px);
+
+      box-shadow:
+        0 3px 0 #a92a08,
+        0 7px 13px rgba(169,42,8,0.25);
+    }
+
+    /* TOP TICKET AREA */
+
     .top-ticket-cta {
-      margin: 0 auto 32px;
+      margin: 0 auto 38px;
       text-align: center;
     }
+
+    /* -------------------------------- */
+    /* TICKET WARNING AREA */
+    /* -------------------------------- */
 
     .ticket-warning {
       margin: 28px auto;
-      padding: 18px 20px;
+
+      padding: 20px 22px;
+
       border-radius: 14px;
-      background: #eef6ff;
-      border: 2px solid #00a3ff;
+
+      background: linear-gradient(
+        135deg,
+        #fff9e8,
+        #fff0d6
+      );
+
+      border: 2px solid #ff9d00;
+
+      box-shadow:
+        0 5px 14px rgba(255,125,0,0.12);
+
       text-align: center;
+
       font-size: 1.05em;
       line-height: 1.5;
     }
+
+    /* -------------------------------- */
+    /* PAYSERA ADVERTISEMENT */
+    /* -------------------------------- */
 
     .paysera-ad {
       display: block;
@@ -223,24 +306,88 @@
       max-height: 65vh;
       object-fit: contain;
       border-radius: 14px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+
+      box-shadow:
+        0 6px 16px rgba(0,0,0,0.18);
+
       margin: 24px auto;
     }
+
+    /* -------------------------------- */
+    /* FOOTER */
+    /* -------------------------------- */
 
     footer {
       margin-top: 30px;
       font-size: 0.8em;
       color: #666;
     }
+
+    /* -------------------------------- */
+    /* MOBILE */
+    /* -------------------------------- */
+
+    @media (max-width: 600px) {
+
+      .wrapper {
+        padding: 24px 12px 40px;
+      }
+
+      img.logo {
+        max-width: 220px;
+      }
+
+      .top-ticket-button,
+      .event-ticket-button {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 360px;
+        padding: 16px 18px;
+        font-size: 1em;
+      }
+
+      .events {
+        padding: 22px 12px;
+      }
+
+      .events h2 {
+        font-size: 1.7em;
+      }
+
+      .event-card h3 {
+        font-size: 1.3em;
+      }
+
+    }
+
   </style>
+
 </head>
 
+
 <body>
+
   <div class="wrapper">
 
-    <img src="faat3d-logo.png" alt="FAAT3D Logo" class="logo">
+    <!-- LOGO -->
 
-    <img src="fhd-image-after-logo.jpg" alt="FAAT3D Top Banner" class="hero-image">
+    <img
+      src="faat3d-logo.png"
+      alt="FAAT3D Logo"
+      class="logo"
+    >
+
+
+    <!-- TOP BANNER -->
+
+    <img
+      src="fhd-image-after-logo.jpg"
+      alt="FAAT3D Top Banner"
+      class="hero-image"
+    >
+
+
+    <!-- INTRODUCTION -->
 
     <h1>FAAT3D Official Links</h1>
 
@@ -248,114 +395,348 @@
       FAAT3D (Full Arch Accuracy Test 3D) is a metrology-grade research project evaluating and ranking the accuracy of dental laboratory and clinical intraoral 3D scanners.
     </p>
 
+
+    <!-- TOP TICKET CTA -->
+
     <div class="top-ticket-cta">
-      <a class="top-ticket-button" href="https://tickets.paysera.com/lt/event/faat3d-proverzis-rugsejo-antrasis-seansas" target="_blank" rel="noopener noreferrer">
-        🎟 Įsigyti bilietus į rusgėjo antąjį seansą „FAAT3D: Proveržis“ 
+
+      <a
+        class="top-ticket-button"
+        href="https://tickets.paysera.com/lt/event/faat3d-proverzis-rugsejo-antrasis-seansas"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ⭐ 🎟️ ĮSIGYTI BILIETUS — „FAAT3D: PROVERŽIS“
       </a>
+
     </div>
+
+
+    <!-- SOCIAL LINKS -->
 
     <div class="links">
-      <a class="link-button" href="https://www.patreon.com/cadaon" target="_blank">
-        <img src="icon-patreon.png" alt="Patreon" class="icon"> Patreon
+
+      <a
+        class="link-button"
+        href="https://www.patreon.com/cadaon"
+        target="_blank"
+      >
+        <img
+          src="icon-patreon.png"
+          alt="Patreon"
+          class="icon"
+        >
+        Patreon
       </a>
 
-      <a class="link-button" href="https://contribee.com/cadaon" target="_blank">
-        <img src="icon-contribee.png" alt="Contribee" class="icon"> Contribee
+
+      <a
+        class="link-button"
+        href="https://contribee.com/cadaon"
+        target="_blank"
+      >
+        <img
+          src="icon-contribee.png"
+          alt="Contribee"
+          class="icon"
+        >
+        Contribee
       </a>
 
-      <a class="link-button" href="https://youtube.com/@faat3d" target="_blank">
-        <img src="icon-youtube.png" alt="YouTube" class="icon"> YouTube
+
+      <a
+        class="link-button"
+        href="https://youtube.com/@faat3d"
+        target="_blank"
+      >
+        <img
+          src="icon-youtube.png"
+          alt="YouTube"
+          class="icon"
+        >
+        YouTube
       </a>
 
-      <a class="link-button" href="https://instagram.com/faat3d_news" target="_blank">
-        <img src="icon-instagram.png" alt="Instagram" class="icon"> Instagram
+
+      <a
+        class="link-button"
+        href="https://instagram.com/faat3d_news"
+        target="_blank"
+      >
+        <img
+          src="icon-instagram.png"
+          alt="Instagram"
+          class="icon"
+        >
+        Instagram
       </a>
 
-      <a class="link-button" href="https://www.facebook.com/people/Faat3d/61568288117871/" target="_blank">
-        <img src="icon-facebook.png" alt="Facebook" class="icon"> Facebook
+
+      <a
+        class="link-button"
+        href="https://www.facebook.com/people/Faat3d/61568288117871/"
+        target="_blank"
+      >
+        <img
+          src="icon-facebook.png"
+          alt="Facebook"
+          class="icon"
+        >
+        Facebook
       </a>
+
     </div>
+
+
+    <!-- PROMO IMAGES -->
 
     <div class="promos">
-      <img src="faat3d-promo1.png" alt="FAAT3D Promo 1">
-      <img src="faat3d-promo2.png" alt="FAAT3D Promo 2">
+
+      <img
+        src="faat3d-promo1.png"
+        alt="FAAT3D Promo 1"
+      >
+
+      <img
+        src="faat3d-promo2.png"
+        alt="FAAT3D Promo 2"
+      >
+
     </div>
+
+
+    <!-- POPULAR VIDEO -->
 
     <div class="popular-video">
+
       <h2>Popular Video</h2>
-      <a href="https://youtu.be/5lkJnpLcobo?si=n4JqlpCfRkRSD_u0" target="_blank">
-        <img src="https://img.youtube.com/vi/5lkJnpLcobo/hqdefault.jpg" alt="Popular Video Thumbnail">
+
+      <a
+        href="https://youtu.be/5lkJnpLcobo?si=n4JqlpCfRkRSD_u0"
+        target="_blank"
+      >
+
+        <img
+          src="https://img.youtube.com/vi/5lkJnpLcobo/hqdefault.jpg"
+          alt="Popular Video Thumbnail"
+        >
+
       </a>
+
     </div>
 
+
+    <!-- EVENTS -->
+
     <section class="events">
-      <h2>🇱🇹Renginiai🇱🇹</h2>
+
+      <h2>🇱🇹 Renginiai 🇱🇹</h2>
+
 
       <div class="event-card">
-        <h3> Rugsėjo 11 d. 2026 m. - antrasis seansas</h3>
+
+        <h3>
+          Rugsėjo 11 d. 2026 m. – antrasis seansas
+        </h3>
+
 
         <p class="event-language">
           In Lithuanian language / Lietuvių kalba 🇱🇹
         </p>
 
-        <img src="FAAT3D_Proverzis_LT_promo3.jpg" alt="FAAT3D: PROVERŽIS antrasis seansas 2026">
+
+        <img
+          src="FAAT3D_Proverzis_LT_promo3.jpg"
+          alt="FAAT3D: PROVERŽIS antrasis seansas 2026"
+        >
+
 
         <div class="event-description">
-          <p><strong>„FAAT3D: PROVERŽIS“ – antrasis seansas rugsėjo 11 d. (penktadienį) 20:00 val.  🇱🇹</strong><br>
-          <p><strong> Kino teatras "Romuva" , Laisvės al. 54, Kaunas. Kamerinė salė. </strong><br>  
-          <strong>„FAAT3D: THE LEAP“ – second screening (in Lithuanian).</strong></p>
 
-          <p>FAAT3D – „Full Arch Accuracy Test 3D“ – tai nepriklausomas skaitmeninės odontologijos projektas, skirtas pilno lanko (full-arch) 3D skenavimo, fotogrametrijos ir CAD/CAM darbo sekų tikslumo analizei bei palyginimui. Projektas orientuotas į realių klinikinių ir laboratorinių sistemų testavimą, metrologiją ir technologijų vertinimą be rinkodarinio pagražinimo.</p>
 
-          <p><strong>CDT Mantas Auškelis, Lithuania – „režisierius“.</strong></p>
+          <p>
+            <strong>
+              „FAAT3D: PROVERŽIS“ – antrasis seansas rugsėjo 11 d.
+              (penktadienį) 20:00 val. 🇱🇹
+            </strong>
+          </p>
 
-          <p>„FAAT3D: PROVERŽIS“ – tai kinematografinė dokumentinė interaktyvi paskaita apie skaitmeninės odontologijos virsmą.</p>
 
-          <p>Filmas nagrinėja intraoralinių ir laboratorinių skenerių tobulėjimą bei jų reikšmės augimą šiuolaikinėje odontologijoje. Čia susiduria technologinis progresas, abejonės, rinkodara ir realus klinikinis pritaikymas.</p>
+          <p>
+            <strong>
+              Kino teatras „Romuva“, Laisvės al. 54, Kaunas.
+              Kamerinė salė.
+            </strong>
+            <br>
 
-          <p>Per dokumentinę ir lyrinę vizualinę kalbą žiūrovas kviečiamas į kelionę per dilemų kupiną dešimtmetį – nuo hibridinių darbo sekų iki pilnai skaitmeninio modelio ir fotogrametrijos, vertinant visa tai per metrologijos mokslo prizmę, su retrospektyva į jau įgyvendintus darbus bei atsargiomis futurologinėmis įžvalgomis.</p>
+            <strong>
+              „FAAT3D: THE LEAP“ – second screening
+              (in Lithuanian).
+            </strong>
+          </p>
 
-          <p>Kaip dažnai nutinka moksle, atsakymai neretai pasirodo kitokie, nei tikėjomės, o kartais jais tikėti tampa nepatogu, nes jie nėra tai, ko norėjome. Tikėjimas ir žinojimas, deja, ne visada sutampa.</p>
 
-          <p>Tai istorija apie momentą, kai technologijų viršūnė lyg jau matoma rūke, tačiau išsklaidžius mitus ir pasakas paaiškėja, kad ji vis dar nepasiekiama ranka.</p>
+          <p>
+            FAAT3D – „Full Arch Accuracy Test 3D“ – tai nepriklausomas
+            skaitmeninės odontologijos projektas, skirtas pilno lanko
+            (full-arch) 3D skenavimo, fotogrametrijos ir CAD/CAM darbo
+            sekų tikslumo analizei bei palyginimui. Projektas orientuotas
+            į realių klinikinių ir laboratorinių sistemų testavimą,
+            metrologiją ir technologijų vertinimą be rinkodarinio
+            pagražinimo.
+          </p>
 
-          <p>FAAT3D kelia klausimą, ar šiandien matome tikrą proveržį, ar tik dar vieną iliuziją prieš naują šuolį.</p>
 
-          <p>Tai audiovizualinė kelionė žmonėms, kurie nenori būti aklai nuvesti prie paruoštų atsakymų, bet siekia patys praskleisti nežinios rūką, suprasti galimybes, jų kainą, riziką ir kryptį.</p>
+          <p>
+            <strong>
+              CDT Mantas Auškelis, Lithuania – „režisierius“.
+            </strong>
+          </p>
+
+
+          <p>
+            „FAAT3D: PROVERŽIS“ – tai kinematografinė dokumentinė
+            interaktyvi paskaita apie skaitmeninės odontologijos virsmą.
+          </p>
+
+
+          <p>
+            Filmas nagrinėja intraoralinių ir laboratorinių skenerių
+            tobulėjimą bei jų reikšmės augimą šiuolaikinėje odontologijoje.
+            Čia susiduria technologinis progresas, abejonės, rinkodara
+            ir realus klinikinis pritaikymas.
+          </p>
+
+
+          <p>
+            Per dokumentinę ir lyrinę vizualinę kalbą žiūrovas kviečiamas
+            į kelionę per dilemų kupiną dešimtmetį – nuo hibridinių darbo
+            sekų iki pilnai skaitmeninio modelio ir fotogrametrijos,
+            vertinant visa tai per metrologijos mokslo prizmę, su
+            retrospektyva į jau įgyvendintus darbus bei atsargiomis
+            futurologinėmis įžvalgomis.
+          </p>
+
+
+          <p>
+            Kaip dažnai nutinka moksle, atsakymai neretai pasirodo
+            kitokie, nei tikėjomės, o kartais jais tikėti tampa nepatogu,
+            nes jie nėra tai, ko norėjome. Tikėjimas ir žinojimas,
+            deja, ne visada sutampa.
+          </p>
+
+
+          <p>
+            Tai istorija apie momentą, kai technologijų viršūnė lyg jau
+            matoma rūke, tačiau išsklaidžius mitus ir pasakas paaiškėja,
+            kad ji vis dar nepasiekiama ranka.
+          </p>
+
+
+          <p>
+            FAAT3D kelia klausimą, ar šiandien matome tikrą proveržį,
+            ar tik dar vieną iliuziją prieš naują šuolį.
+          </p>
+
+
+          <p>
+            Tai audiovizualinė kelionė žmonėms, kurie nenori būti aklai
+            nuvesti prie paruoštų atsakymų, bet siekia patys praskleisti
+            nežinios rūką, suprasti galimybes, jų kainą, riziką ir kryptį.
+          </p>
+
+
+          <!-- TICKET INFORMATION -->
 
           <div class="ticket-warning">
-            <p><strong>Bilietus į renginį įsigykite iki rugsėjo 10 d. per Paysera Tickets.</strong><br>
-            Bilietai nuo rugsėjo 1-osios brangs! Labai ribotos vietos į vakarinę "COLLOQUIUM PRIVATE" diskusiją!</p>
 
-            <a class="event-ticket-button" href="https://tickets.paysera.com/lt/event/faat3d-proverzis-interaktyvus-filmas" target="_blank" rel="noopener noreferrer">
-              🎟 Įsigyk bilietus į „FAAT3D: Proveržis“ antąjį seansą!
+            <p>
+
+              <strong>
+                ⭐ Bilietus į renginį įsigykite iki rugsėjo 10 d.
+                per Paysera Tickets.
+              </strong>
+
+              <br>
+
+              Bilietai nuo rugsėjo 1-osios brangs!
+
+              <br>
+
+              Labai ribotos vietos į vakarinę
+              „COLLOQUIUM PRIVATE“ diskusiją!
+
+            </p>
+
+
+            <a
+              class="event-ticket-button"
+              href="https://tickets.paysera.com/lt/event/faat3d-proverzis-rugsejo-antrasis-seansas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ⭐ 🎟️ ĮSIGYTI BILIETUS Į ANTRĄJĮ SEANSĄ
             </a>
+
           </div>
 
-          <a href="https://tickets.paysera.com/lt/event/faat3d-proverzis-rugsejo-antrasis-seansas" target="_blank" rel="noopener noreferrer">
-            <img src="paysera-tickets-faat3d.jpg" alt="FAAT3D: PROVERŽIS Paysera Tickets" class="paysera-ad">
+
+          <!-- PAYSERA AD -->
+
+          <a
+            href="https://tickets.paysera.com/lt/event/faat3d-proverzis-rugsejo-antrasis-seansas"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="paysera-tickets-faat3d.jpg"
+              alt="FAAT3D: PROVERŽIS Paysera Tickets"
+              class="paysera-ad"
+            >
+
           </a>
+
+
         </div>
 
+
+        <!-- TRAILER -->
+
         <div class="event-video-embed">
-  <iframe
-    src="https://www.youtube.com/embed/5hVp4iV2xX4"
-    title="FAAT3D THE LEAP Official Trailer"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-</div>
+
+          <iframe
+            src="https://www.youtube.com/embed/5hVp4iV2xX4"
+            title="FAAT3D THE LEAP Official Trailer"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+
+        </div>
+
+
       </div>
+
     </section>
 
-    <img src="fhd-image-after-video.jpg" alt="FAAT3D Bottom Banner" class="footer-image">
+
+    <!-- BOTTOM BANNER -->
+
+    <img
+      src="fhd-image-after-video.jpg"
+      alt="FAAT3D Bottom Banner"
+      class="footer-image"
+    >
+
 
     <footer>
-      © 2025 FAAT3D. Full Arch Accuracy Testing. All rights reserved.
+      © 2026 FAAT3D. Full Arch Accuracy Testing. All rights reserved.
     </footer>
 
+
   </div>
+
 </body>
+
 </html>
-```
